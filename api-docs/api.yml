@@ -1,7 +1,7 @@
 openapi: 3.0.0
 info:
   description: "PDAX Integration with GCash"
-  version: "1.2.1"
+  version: "1.2.2"
   title: "PDAX"
 servers:
   - url: 'https://{environment}.api.pdax.ph/caas-gcash-orchestrator/'
