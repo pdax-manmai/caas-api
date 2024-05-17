@@ -20,6 +20,7 @@ Method | HTTP request | Description
 [**postRiskProfile**](DefaultApi.md#postriskprofile) | **POST** /gcash/risk_profiles | Post user&#39;s Risk Profile
 [**registerUser**](DefaultApi.md#registeruser) | **POST** /gcash/users | Add new user
 [**sendOTP**](DefaultApi.md#sendotp) | **POST** /gcash/users/{userId}/otp | Send OTP email
+[**testLogin**](DefaultApi.md#testlogin) | **POST** /gcash/login-test | Get idToken
 
 
 # **fiatConfirm**
@@ -507,6 +508,47 @@ Name | Type | Description  | Notes
 ### Authorization
 
 [Authorization](../README.md#Authorization)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **testLogin**
+> LoginResponse testLogin(login)
+
+Get idToken
+
+### Example
+```dart
+import 'package:openapi/api.dart';
+
+final api = Openapi().getDefaultApi();
+final Login login = ; // Login | 
+
+try {
+    final response = api.testLogin(login);
+    print(response);
+} catch on DioError (e) {
+    print('Exception when calling DefaultApi->testLogin: $e\n');
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **login** | [**Login**](Login.md)|  | [optional] 
+
+### Return type
+
+[**LoginResponse**](LoginResponse.md)
+
+### Authorization
+
+No authorization required
 
 ### HTTP request headers
 

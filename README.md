@@ -75,6 +75,7 @@ Class | Method | HTTP request | Description
 [*DefaultApi*](doc/DefaultApi.md) | [**postRiskProfile**](doc/DefaultApi.md#postriskprofile) | **POST** /gcash/risk_profiles | Post user&#39;s Risk Profile
 [*DefaultApi*](doc/DefaultApi.md) | [**registerUser**](doc/DefaultApi.md#registeruser) | **POST** /gcash/users | Add new user
 [*DefaultApi*](doc/DefaultApi.md) | [**sendOTP**](doc/DefaultApi.md#sendotp) | **POST** /gcash/users/{userId}/otp | Send OTP email
+[*DefaultApi*](doc/DefaultApi.md) | [**testLogin**](doc/DefaultApi.md#testlogin) | **POST** /gcash/login-test | Get idToken
 
 
 ## Documentation For Models
