@@ -33,6 +33,24 @@ paths:
                 $ref: "#/components/schemas/LoginResponse"
         "400":
           description: "Invalid authCode"
+  /gcash/login-test:
+    post:
+      summary: "Get idToken"
+      operationId: "getIdToken"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/Login"
+      responses:
+        "200":
+          description: "Success"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/LoginResponse"
+        "400":
+          description: "Invalid authCode"
   /gcash/get_user_id:
     post:
       summary: "Get User ID"
